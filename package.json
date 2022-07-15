@@ -1,0 +1,22 @@
+{
+  "name": "my-to-do-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kalani-875/my-to-do-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kalani-875/my-to-do-app/issues"
+  },
+  "homepage": "https://github.com/Kalani-875/my-to-do-app#readme",
+  "dependencies": {
+    "antd": "^4.21.6"
+  }
+}
