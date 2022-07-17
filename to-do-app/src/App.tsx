@@ -3,9 +3,12 @@ import "./App.css";
 import TodoTask from "./components/TodoTask";
 import { ITask } from "./Interfaces";
 
+
 const App: FC = () => {
   const [task, setTask] = useState<string>("");
   const [todoList, setTodoList] = useState<ITask[]>([]);
+  
+
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>): void => {
     if (event.target.name === "task") {
@@ -26,9 +29,11 @@ const App: FC = () => {
       })
     );
   };
+  
 
   return (
     <div className="App">
+      <h2 className="todoApp">Todo App</h2><hr/>
       <div className="header">
         <div className="inputContainer">
           <input
@@ -41,11 +46,12 @@ const App: FC = () => {
           
         </div>
         <button onClick={addTask}>Add</button>
-      </div>
-      <div className="todoList">
+      </div><hr/>
+      <div className="todoList"><h3>Tasks</h3>
         {todoList.map((task: ITask, key: number) => {
           return <TodoTask key={key} task={task} completeTask={completeTask} />;
         })}
+        
       </div>
     </div>
   );

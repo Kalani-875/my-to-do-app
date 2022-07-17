@@ -1,6 +1,6 @@
 import React from "react";
 import { ITask } from "../Interfaces";
-import { Button } from 'antd';
+
 
 interface Props {
   task: ITask;
@@ -13,13 +13,14 @@ const TodoTask = ({ task, completeTask }: Props) => {
       <div className="content">
         <span>{task.taskName}</span>
       </div>
-      <Button
+      <button
         onClick={() => {
           completeTask(task.taskName);
         }}
       >
         Delete
-      </Button>
+      </button>
+      
     </div>
   );
 };

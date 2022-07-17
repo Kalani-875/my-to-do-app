@@ -18,14 +18,18 @@ body{background: linear-gradient(
 
   .header {
     flex: 30%;
-    border-radius: 25px;
-    background-color: rgb(180, 135, 195);
-    width: 0px;
-    height: 0px;
+    padding-top: 1cm;
+    padding-bottom: 1cm;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
+    background: linear-gradient(
+    to right,
+    #91eae4,
+    #86a8e7,
+    #7f7fd5);
   }
 
 .header .inputContainer {
@@ -34,14 +38,14 @@ body{background: linear-gradient(
 }
 
 .header input {
-  width: 200px;
+  width: 300px;
   height: 40px;
   border: none;
   border-bottom-left-radius: 8px;
   border-top-left-radius: 8px;
   padding-left: 10px;
   font-size: 17px;
-  border: 1px solid grey;
+  border: 1px solid rgb(220, 194, 194);
 }
 
 .header button {
@@ -66,14 +70,20 @@ body{background: linear-gradient(
   
 }
 
+.todoApp{
+  padding-left: 30px;
+  padding-top: 50px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
 .task {
   
   width: 500px;
   height: 50px;
   display: flex;
   color: rgb(3, 3, 3);
-  margin: 15px;
-  
+  margin: 5px;
+  text-indent: left;
 }
 
 .task .content {
@@ -81,9 +91,6 @@ body{background: linear-gradient(
   text-align: left;
   flex: 80%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .task .content span {
@@ -106,7 +113,7 @@ body{background: linear-gradient(
   flex: 20%;
   height: 100%;
   border: none;
-  background-color: rgb(252, 128, 128);
+  background-color: rgb(241, 97, 97);
   color: white;
   cursor: pointer;
 }
